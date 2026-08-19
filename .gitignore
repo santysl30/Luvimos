@@ -1,0 +1,187 @@
+# ==============================
+
+# LUVIMOS — Global Git Ignore
+
+# ==============================
+
+# ------------------------------
+
+# Environment & Secrets
+
+# ------------------------------
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+config/secrets/
+
+# ------------------------------
+
+# Node.js / JavaScript
+
+# ------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# ------------------------------
+
+# React / Next.js / Frontend
+
+# ------------------------------
+
+.next/
+out/
+dist/
+build/
+coverage/
+.vite/
+.cache/
+
+# ------------------------------
+
+# Python / AI Service
+
+# ------------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.so
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ------------------------------
+
+# Python packaging
+
+# ------------------------------
+
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+wheels/
+
+# ------------------------------
+
+# Logs
+
+# ------------------------------
+
+logs/
+*.log
+
+# ------------------------------
+
+# Databases / Local Data
+
+# ------------------------------
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Local MongoDB data
+
+data/db/
+mongodb-data/
+
+# Database dumps
+
+*.bson
+*.dump
+
+# ------------------------------
+
+# OS Files
+
+# ------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------
+
+# IDE / Editors
+
+# ------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+.idea/
+*.iml
+
+# ------------------------------
+
+# Temporary Files
+
+# ------------------------------
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ------------------------------
+
+# Testing / Reports
+
+# ------------------------------
+
+.nyc_output/
+test-results/
+playwright-report/
+
+# ------------------------------
+
+# Generated Files
+
+# ------------------------------
+
+generated/
+artifacts/
+*.generated.*
+
+# ------------------------------
+
+# Local AI / Model Files
+
+# ------------------------------
+
+models/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# ------------------------------
+
+# OS / Runtime
+
+# ------------------------------
+
+*.pid
+*.pid.lock
+.DS_Store
