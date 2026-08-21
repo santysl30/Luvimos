@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import { hashPassword, verifyPassword } from "./password.js";
 import { createSessionToken, hashSessionToken } from "./session.js";
 import { normalizeEmail, validatePassword } from "./input.js";
@@ -9,6 +10,8 @@ export interface UserRecord {
   role: "user" | "guardian" | "admin";
 }
 
+// Temporary in-memory store for the authentication contract.
+// Replace with MongoDB persistence before production or real user data.
 const users = new Map<string, UserRecord>();
 const sessions = new Map<string, { userId: string; expiresAt: number }>();
 
